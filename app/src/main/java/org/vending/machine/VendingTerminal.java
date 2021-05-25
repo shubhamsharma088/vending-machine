@@ -6,9 +6,9 @@ import org.springframework.shell.standard.ShellMethod;
 @ShellComponent
 public class VendingTerminal {
 
-  @ShellMethod("Add two integers together.")
-  public int add(int a, int b) {
-    return a + b;
+  @ShellMethod("Order by ID.")
+  public String order(int id) {
+    return "Here is your order " + id;
   }
 }
 
